@@ -131,11 +131,12 @@ def main():
 	epochs = 10
 	samplesperEpoch = 10
 
+	#MODIFY THESE
 	#*******************************************
 	trainTime = 0.01 #in hours
+	modelName='YOUR_NAME_HERE'
 	#*******************************************
 
-	modelName='Emily2LayerNew'
 	dataSet = []
 
 	for patient in [dataPath]:
