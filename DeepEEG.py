@@ -26,7 +26,7 @@ def getJsonData(dataPath):
 	for timeStamp in res['data']:
 		data.append(numpy.array(timeStamp['channel_values'],dtype='float32'))		
 	data = numpy.stack(data,axis=1)
-	data = numpy.resize(data,(data.shape[0],100000))
+	data = numpy.resize(data,(data.shape[0],131072))
 	data = OrderedDict(input=numpy.array(data, dtype='float32'), truth=numpy.array(trainOut, dtype='float32'))
 	return data
 
