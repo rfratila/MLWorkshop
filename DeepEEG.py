@@ -133,8 +133,8 @@ def main():
 
 	#MODIFY THESE
 	#*******************************************
-	trainTime = 0.01 #in hours
-	modelName='YOUR_NAME_HERE'
+	trainTime = 10.0/60 #in hours
+	modelName='whatever_you_want'
 	#*******************************************
 
 	dataSet = []
